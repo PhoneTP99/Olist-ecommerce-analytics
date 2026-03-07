@@ -207,3 +207,21 @@ order.info()
 
 print("\n--- delivered_df DataFrame ---")
 delivered_df.info()
+
+# =============================================================================
+# 13. EXPORT DATA FOR POWER BI
+# =============================================================================
+
+# Create processed folder if it doesn't exist
+output_path = os.path.join(project_root, 'Data', 'processed')
+os.makedirs(output_path, exist_ok=True)
+
+# Merge delivery_time and late_delivery back into order
+order_export = order.copy()
+order_export['delivery_time'] = delivered_df['delivery_time']
+order_export['late_delivery'] = delivered_df['late_delivery']
+
+# Export single CSV
+order_export.to_csv(os.path.join(output_path, 'orders_cleaned.csv'), index=False)
+
+print("\n✅ Exported orders_cleaned.csv to Data/processed/")
