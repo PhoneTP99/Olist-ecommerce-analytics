@@ -282,7 +282,7 @@ The final dashboard was built in Power BI Desktop using `rfm_segments.csv` as th
 - **93,335** unique customers analyzed across **713 days** of order history
 - **45.25%** of customers fall in the **Hibernating** segment — the largest group, last purchased long ago with low spend
 - **At Risk** customers contribute the most revenue (**$9.5M**) despite being inactive — a strong win-back opportunity
-- **Champions** (3%) have the lowest average recency (**42 days**) and highest frequency (**2.11 orders**) — highly engaged customers
+- **Champions** (17%) have the lowest average recency (**42 days**) and highest frequency (**2.11 orders**) — highly engaged customers
 - **Promising** customers have an average recency of only **220 days** — good candidates for re-engagement campaigns
 - Over **90,000 customers** placed only 1 order, confirming very low repeat purchase rates — a key business problem to address
 
